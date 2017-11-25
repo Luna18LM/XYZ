@@ -1,0 +1,420 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Ketal Moda</title>
+        <meta name="keywords" content="HTML5,CSS3,Template" />
+        <meta name="description" content="" />
+
+        <meta name="keywords" content="HTML5,CSS3,Template" />
+        <meta name="description" content="HTML5,CSS3,Template"><!-- mobile settings -->
+        <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+        
+        <!-- WEB FONTS -->
+        <link href="~/Recursos/Bootstrape/assets/css/css9292.css?family=Open+Sans:300,400,700,800" rel="stylesheet" type="text/css"/>
+        
+        <!-- CORE CSS -->
+        <link href="~/Recursos/Bootstrape/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="~/Recursos/Bootstrape/assets/css/font-awesome.css" rel="stylesheet" type="text/css" />
+        <link href="~/Scripts/jquery-ui.css" rel="stylesheet" type="text/css" />
+        
+        <!-- REVOLUTION SLIDER -->
+        <link href="~/Recursos/Bootstrape/assets/plugins/revolution-slider/css/settings.css" rel="stylesheet" type="text/css" />
+
+        <!-- THEME CSS -->
+        <link href="~/Recursos/Bootstrape/assets/css/essentials.css" rel="stylesheet" type="text/css"/>
+        <link href="~/Recursos/Bootstrape/assets/css/layout.css" rel="stylesheet" type="text/css" />
+        <link href="~/Recursos/Bootstrape/assets/css/layout-responsive.css" rel="stylesheet" type="text/css" />
+    
+        <!-- JAVASCRIPT FILES -->
+        <script type="text/javascript" src="~/Recursos/Bootstrape/assets/plugins/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="~/Recursos/Bootstrape/assets/plugins/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="~/Recursos/Bootstrape/assets/plugins/jquery.cookie.js"></script>
+        <script type="text/javascript" src="~/Recursos/Bootstrape/assets/plugins/jquery.appear.js"></script>
+        <script type="text/javascript" src="~/Recursos/Bootstrape/assets/plugins/jquery.isotope.js"></script>
+        <script type="text/javascript" src="~/Recursos/Bootstrape/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="~/Scripts/jquery-2.2.3.js"></script>
+        <script type="text/javascript" src="~/Scripts/jquery-ui.js"></script>
+     
+        <!-- REVOLUTION SLIDER -->
+        <script type="text/javascript" src="~/Recursos/Bootstrape/assets/plugins/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
+        <script type="text/javascript" src="~/Recursos/Bootstrape/assets/plugins/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+        <script type="text/javascript" src="~/Recursos/Bootstrape/assets/js/slider_revolution.js"></script>
+
+    </head>
+    <body>
+        <header id="topHead" class=fixed>
+            <div class="container">
+
+
+            </div>
+        </header>
+
+        <header id="topNav" class="topHead">
+            <!-- remove class="topHead" if no topHead used! -->
+            <div class="container">
+
+                <!-- Mobile Menu Button -->
+                <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+
+                <!-- Logo text or image -->
+                <a class="logo" href="@Url.Action("Index","inicio")">
+                    <img src="~/Recursos/Bootstrape/assets/images/logo.png" alt="Atropos" />
+                </a>
+
+                <!-- Top Nav -->
+                <div class="navbar-collapse nav-main-collapse collapse pull-right">
+                    <nav class="nav-main mega-menu">
+                        <ul class="nav nav-pills nav-main scroll-menu" align="center">
+                            <li class="dropdown active">
+                                <a href="@Url.Action("Index","inicio")" class="dropdown-toggle">	<b>Inicio</b></a>
+
+                            </li>
+
+                            <li class="dropdown active">
+                                <a href="@Url.Action("Login", "Intranet")" class="dropdown-toggle"><i class="fa fa-users"></i><strong> Iniciar Sesion</strong></a>
+                            </li>
+
+
+                        </ul>
+                    </nav>
+                </div>
+                <!-- /Top Nav -->
+
+            </div>
+        </header>
+        <span id="header_shadow"></span>
+        <!-- WRAPPER -->
+        <div id="wrapper">
+            <!-- REVOLUTION SLIDER -->
+            <div class="fullwidthbanner-container roundedcorners">
+                <div class="fullwidthbanner">
+                    <ul>
+
+                        <!-- SLIDE  -->
+                        <li data-transition="fade" data-slotamount="7" data-masterspeed="1500">
+
+                            <!-- COVER IMAGE -->
+                            <img src="~/Recursos/Bootstrape/assets/images/demo/revolution_slider/sliderbg.jpg" alt="" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
+
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption lightgrey_divider skewfromrightshort customout"
+                                 data-x="85"
+                                 data-y="224"
+                                 data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                 data-speed="500"
+                                 data-start="1200"
+                                 data-easing="Power4.easeOut"
+                                 data-endspeed="500"
+                                 data-endeasing="Power4.easeIn"
+                                 data-captionhidden="off"
+                                 style="z-index: 2">
+                            </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption customin customout"
+                                 data-x="right" data-hoffset="-220"
+                                 data-y="bottom" data-voffset="0"
+                                 data-customin="x:50;y:150;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;"
+                                 data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                 data-speed="800"
+                                 data-start="700"
+                                 data-easing="Power4.easeOut"
+                                 data-endspeed="500"
+                                 data-endeasing="Power4.easeIn"
+                                 style="z-index: 3">
+                                <img src="~/Recursos/Bootstrape/assets/images/demo/revolution_slider/calzado4.png" alt="" />
+                            </div>
+
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption customin customout"
+                                 data-x="right" data-hoffset="-90"
+                                 data-y="bottom" data-voffset="-70"
+                                 data-customin="x:50;y:150;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;"
+                                 data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                 data-speed="1500"
+                                 data-start="700"
+                                 data-easing="Elastic.easeInOut"
+                                 data-endspeed="500"
+                                 data-endeasing="Power1.easeIn"
+                                 style="z-index: 3">
+                                <img src="~/Recursos/Bootstrape/assets/images/demo/revolution_slider/calzado3.png" alt="" />
+                            </div>
+
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption large_bold_grey skewfromrightshort customout"
+                                 data-x="80"
+                                 data-y="66"
+                                 data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                 data-speed="500"
+                                 data-start="800"
+                                 data-easing="Back.easeOut"
+                                 data-endspeed="500"
+                                 data-endeasing="Power4.easeIn"
+                                 data-captionhidden="off"
+                                 style="z-index: 4">
+                                ¿Quienes
+                            </div>
+
+                            <!-- LAYER NR. 4 -->
+                            <div class="tp-caption large_bold_grey skewfromleftshort customout"
+                                 data-x="80"
+                                 data-y="122"
+                                 data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                 data-speed="300"
+                                 data-start="1100"
+                                 data-easing="Back.easeOut"
+                                 data-endspeed="500"
+                                 data-endeasing="Power4.easeIn"
+                                 data-captionhidden="off"
+                                 style="z-index: 7">
+                                Somos?
+                            </div>
+
+                            <!-- LAYER NR. 5 -->
+                            <div class="tp-caption small_thin_grey customin customout"
+                                 data-x="80"
+                                 data-y="230"
+                                 data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
+                                 data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                 data-speed="500"
+                                 data-start="1300"
+                                 data-easing="Power4.easeOut"
+                                 data-endspeed="500"
+                                 data-endeasing="Power4.easeIn"
+                                 data-captionhidden="off"
+                                 style="z-index: 8">
+                                <strong>Ketal Moda</strong> es una empresa destacada por su amplia <br />
+                                experiencia en la manufactura de calzado y accesorios en cuero,<br />
+                                cuenta con personal altamente calificado en cada uno de sus procesos,<br />
+                                tiene prestigio y excelente diseño en catalogo para damas y caballeros.<br />
+                            </div>
+
+                            <!-- LAYER NR. 6 -->
+                            <div class="tp-caption large_bold_darkblue skewfromleftshort customout"
+                                 data-x="80" data-hoffset="-90"
+                                 data-y="350"
+                                 data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                 data-speed="500"
+                                 data-start="1600"
+                                 data-easing="Back.easeOut"
+                                 data-endspeed="500"
+                                 data-endeasing="Power4.easeIn"
+                                 data-captionhidden="off"
+                                 style="z-index: 10">
+                                Más +
+                            </div>
+
+                            <!-- LAYER NR. 7 -->
+                            <div class="tp-caption medium_bg_darkblue skewfromleftshort customout"
+                                 data-x="80" data-hoffset="-90"
+                                 data-y="410"
+                                 data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                 data-speed="500"
+                                 data-start="1650"
+                                 data-easing="Back.easeOut"
+                                 data-endspeed="500"
+                                 data-endeasing="Power4.easeIn"
+                                 data-captionhidden="off"
+                                 style="z-index: 11">
+                                Calidad
+                            </div>
+
+                            <div class="tp-caption medium_bold_orange skewfromleftshort customout start font300"
+                                 data-x="195" data-hoffset="-70"
+                                 data-y="420"
+                                 data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                 data-speed="500"
+                                 data-start="1850"
+                                 data-easing="Back.easeOut"
+                                 data-endspeed="500"
+                                 data-endeasing="Power4.easeIn"
+                                 data-captionhidden="off"
+                                 style="z-index: 13;">
+                                <strong>&</strong>
+                            </div>
+
+                            <!-- LAYER NR. 8 -->
+                            <div class="tp-caption medium_bg_orange skewfromleftshort customout"
+                                 data-x="230" data-hoffset="-90"
+                                 data-y="410"
+                                 data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                 data-speed="500"
+                                 data-start="2300"
+                                 data-easing="Back.easeOut"
+                                 data-endspeed="500"
+                                 data-endeasing="Power4.easeIn"
+                                 data-captionhidden="off"
+                                 style="z-index: 21">
+                                Confort
+                            </div>
+
+                        </li>
+
+                        <!-- SLIDE  -->
+                        <li data-transition="3dcurtain-vertical" data-slotamount="14" data-masterspeed="300" data-delay="10000">
+
+                            <!-- COVER IMAGE -->
+                            <img src="~/Recursos/Bootstrape/assets/images/demo/revolution_slider/slider7.jpg" alt="" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
+                            <div class="tp-caption lft boxshadow"
+                                 data-x="70"
+                                 data-y="70"
+                                 data-speed="900"
+                                 data-start="500"
+                                 data-easing="easeOutBack">
+                                <iframe width="640" height="360" src="~/Recursos/Bootstrape/assets/images/demo/revolution_slider/video1.mp4" frameborder="0" allowfullscreen></iframe>
+
+                            </div>
+
+                            <div class="tp-caption sft large_bold_grey"
+                                 data-x="750"
+                                 data-y="70"
+                                 data-speed="300"
+                                 data-start="1200"
+                                 data-easing="easeOutExpo">
+                                Misión
+                            </div>
+
+                            <div class="tp-caption lfb thinheadline_dark"
+                                 data-x="750"
+                                 data-y="164"
+                                 data-speed="300"
+                                 data-start="1400"
+                                 data-easing="easeOutExpo">
+                                <strong>
+                                    Satisfacer las necesidades <br />
+                                    y preferencias del consumidor<br />
+                                    mediante la entrega de <br />
+                                    productos de la más alta <br />
+                                    calidad a un precio justo.<br />
+                                </strong>
+                            </div>
+
+                            <div class="tp-caption customin customout"
+                                 data-x="right" data-hoffset="-90"
+                                 data-y="bottom" data-voffset="0"
+                                 data-customin="x:50;y:150;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;"
+                                 data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                 data-speed="1500"
+                                 data-start="700"
+                                 data-easing="Elastic.easeInOut"
+                                 data-endspeed="500"
+                                 data-endeasing="Power1.easeIn"
+                                 style="z-index: 3">
+                                <img src="~/Recursos/Bootstrape/assets/images/demo/revolution_slider/calzado5.png" alt="" />
+                            </div>
+
+                        </li>
+
+                        <!-- SLIDE -->
+                        <li data-transition="incube-horizontal" data-slotamount="5" data-masterspeed="700">
+
+                            <!-- COVER IMAGE -->
+                            <img src="~/Recursos/Bootstrape/assets/images/demo/revolution_slider/slider5.jpg" alt="" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
+
+
+                            <div class="tp-caption large_text sft"
+                                 data-x="center"
+                                 data-y="360"
+                                 data-customin="x:-150;y:-280;z:0;rotationX:-140;rotationY:-280;rotationZ:-220;scaleX:1.5;scaleY:0;skewX:57;skewY:60;opacity:0;transformPerspective:600;transformOrigin:120% 190%;"
+                                 data-customout="x:-450;y:-430;z:-30;rotationX:90;rotationY:-290;rotationZ:-20;scaleX:1;scaleY:2.8;skewX:59;skewY:4;opacity:0;transformPerspective:600;transformOrigin:70% 0%;"
+                                 data-speed="1500"
+                                 data-endspeed="500"
+                                 data-start="2700"
+                                 data-endeasing="Bounce.easeOut"
+                                 data-easing="Back.easeInOut">
+
+                            </div>
+                            <div class="tp-caption large_text sft"
+                                 data-x="center"
+                                 data-y="130"
+                                 data-speed="300"
+                                 data-start="1000"
+                                 data-endspeed="500"
+                                 data-easing="easeOutBack">
+                                <h1>Visión</h1>
+                            </div>
+
+
+                            <div class="tp-caption large_text sft"
+                                 data-x="center"
+                                 data-y="260"
+                                 data-speed="300"
+                                 data-start="1700"
+                                 data-endspeed="500"
+                                 data-easing="easeOutBack">
+                                <center>
+                                    <strong>
+                                        Estar posicionados en la mente de nuestros <br />
+                                        clientes como la mejor, en calidad y<br />
+                                        diseños exclusivos e innovadores. <br />
+                                        Impactar en el mercado con un verdadero estilo.<br />
+                                    </strong>
+                                </center>
+                            </div>
+
+                        </li>
+                        <li data-transition="3dcurtain-vertical" data-slotamount="14" data-masterspeed="300" data-delay="10000">
+
+                            <!-- COVER IMAGE -->
+                            <img src="~/Recursos/Bootstrape/assets/images/demo/revolution_slider/slider3.jpg" alt="" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
+
+                            <div class="tp-caption large_text sft"
+                                 data-x="center"
+                                 data-y="130"
+                                 data-speed="300"
+                                 data-start="1000"
+                                 data-endspeed="500"
+                                 data-easing="easeOutBack">
+                                <h1>Ketal Moda</h1>
+                            </div>
+
+                            <div class="tp-caption large_text sft"
+                                 data-x="center"
+                                 data-y="260"
+                                 data-speed="300"
+                                 data-start="1700"
+                                 data-endspeed="500"
+                                 data-easing="easeOutBack">
+                                <h2>Calzado de Calidad</h2>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="tp-bannertimer"></div>
+                </div>
+            </div>
+            <!-- /REVOLUTION SLIDER -->
+
+
+            <section class="container text-center">
+                <h1 class="text-center">
+                    <strong>Bienvenidos</strong> a Ketal Moda
+                    <span class="subtitle">COME ON, DON'T BE SHY! TODAY WE DON'T BITE!</span>
+                </h1>
+            </section>
+
+        </div>
+        <!-- /WRAPPER -->
+        <!-- FOOTER -->
+        <footer>
+
+            <!-- copyright , scrollTo Top -->
+            <div class="footer-bar">
+                <div class="container">
+                    <span class="copyright">Copyright &copy; Your Company, LLC . All Rights Reserved.</span>
+
+                </div>
+            </div>
+        </footer>
+
+
+
+    </body>
+</html>

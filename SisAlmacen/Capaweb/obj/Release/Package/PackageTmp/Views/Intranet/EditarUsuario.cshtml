@@ -1,0 +1,114 @@
+﻿@model Capaentidades.Usuario
+@{
+    ViewBag.Title = "EditarUsuario";
+    Layout = "~/Views/MasterIntranet.cshtml";
+}
+<link href="~/Recursos/Bootstrapi/assets/plugins/bootstrap-datepicker/css/datepicker.css" rel="stylesheet" type="text/css" />
+<link href="~/Recursos/Bootstrapi/assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="~/Recursos/Bootstrapi/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="~/Recursos/Bootstrapi/assets/plugins/bootstrap-eonasdan-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+
+<script type="text/javascript" src="~/Recursos/Validaciones/jquery.js"></script>
+<script type="text/javascript" src="~/Recursos/Validaciones/jquery.validate.js"></script>
+
+<ol class="breadcrumb pull-right">
+    <li><a href="@Url.Action("Principal","Intranet")">Principal</a></li>
+    <li class="active">Editar Usuario</li>
+</ol>
+<h2 class="page-header">Editar Usuario</h2>
+<div class="row">
+    <!-- begin col-12 -->
+    <div class="col-md-12">
+        <!-- begin panel -->
+        <!-- begin panel -->
+        <div class="panel panel-inverse" data-sortable-id="form-validation-1">
+            <div class="panel-heading">
+                <div class="panel-heading-btn">
+                    <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                    <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                    <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                    <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                </div>
+                <h4 class="panel-title">Actualiza Datos</h4>
+            </div>
+            <div class="panel-body panel-form">
+                <form class="form-horizontal form-bordered" data-parsley-validate="true" name="demo-form" action="EditarUsuario/IntranetController" method="post" id="FormEditar">
+                    <div class="form-group">
+                        <label class="control-label col-md-4 col-sm-4" for="fullname">Nombres :</label>
+                        <div class="col-md-6 col-sm-6">
+                            <input class="form-control" type="text" id="fullname" name="txtNombre" placeholder="Nombres" data-parsley-required="true" value="@Html.DisplayFor(model => model.Nombre)" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-4 col-sm-4" for="email">Apellido Paterno :</label>
+                        <div class="col-md-6 col-sm-6">
+                            <input class="form-control" type="text" id="fullname" name="txtApeP" placeholder="Paterno" data-parsley-required="true" value="@Html.DisplayFor(model => model.ApellidoPaterno)" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-4 col-sm-4" for="website">Apellido Materno :</label>
+                        <div class="col-md-6 col-sm-6">
+                            <input class="form-control" type="text" id="fullname" name="txtApeM" placeholder="Materno" data-parsley-required="true" value="@Html.DisplayFor(model => model.ApellidoMaterno)" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-4 col-sm-4" for="message">DNI :</label>
+                        <div class="col-md-6 col-sm-6">
+                            <input class="form-control" type="text" id="fullname" name="txtDni" placeholder="DNI" data-parsley-required="true" value="@Html.DisplayFor(model => model.dni)" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-4 col-sm-4" for="message">Usuario :</label>
+                        <div class="col-md-6 col-sm-6">
+                            <input class="form-control" type="text" id="fullname" name="txtUsuario" placeholder="Usuario" data-parsley-required="true" disabled="disabled" value="@Html.DisplayFor(model => model.eusuario)" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-4 col-sm-4" for="message">Contraseña :</label>
+                        <div class="col-md-6 col-sm-6">
+                            <input class="form-control" type="password" id="number" name="txtContraseña" data-parsley-type="number" placeholder="Contraseña" value="@Html.DisplayFor(model => model.Contasena)" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-4 col-sm-4" for="message">Fecha Nacimiento :</label>
+                        <div class="col-md-6 col-sm-6">
+                            <input type="text" class="form-control" id="Fecha" name="txtFecha" placeholder="Ingrese fecha DD/MM/YYYY" value="@Html.DisplayFor(model => model.Fechanacimiento.Date)">
+                        </div>
+                        <label class="control-label col-md-4 col-sm-4" for="message">Dirección :</label>
+                        <div class="col-md-6 col-sm-6">
+                            <input class="form-control" type="text" id="Direccion" name="txtDireccion" data-parsley-type="number" placeholder="Dirección" value="@Html.DisplayFor(model => model.Direccion)" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-4 col-sm-4" for="message">email :</label>
+                        <div class="col-md-6 col-sm-6">
+                            <input class="form-control" type="text" id="email" name="txtEmail" data-parsley-type="email" placeholder="Email" data-parsley-required="true" data-parsley-id="7385" value="@Html.DisplayFor(model => model.Email)">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-4 col-sm-4" for="message">Fotografia :</label>
+                        <div class="col-md-6 col-sm-6">
+                            <img src="~/Recursos/Imagenes/Usuarios/@Html.DisplayFor(model=> model.fotografia)" style="width:100px; height: 100px" />
+                            <input class="form-control" type="hidden" name="txtidUsuario" value="@Html.DisplayFor(model=> model.idUsuario)">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-4 col-sm-4"></label>
+                        <div class="col-md-6 col-sm-6">
+                            <button type="submit" class="btn btn-success" name="btnActualizar">Actualizar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- end panel -->
+        <!-- end col-12 -->
+    </div>
+
+<script type="text/javascript">
+
+    $().ready(function () {
+        $("#FormEditar").validate();
+    });
+
+</script>

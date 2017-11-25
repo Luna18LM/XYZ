@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "NuevoProducto";
+}
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">Nuevo Producto</h4>
+</div>
+<div class="modal-body">
+    <form action="
+
+/Producto/NuevoProducto" method="post" id="FormNuevo" enctype="multipart/form-data">
+        <label class="col-md-3 control-label">Nombre :</label><input type="text" class="form-control" placeholder="Ingrese Nombre" name="txtNombre" />  <br />
+        <label class="col-md-3 control-label">Serie :</label><input type="text" class="form-control" placeholder="Ingrese Serie" name="txtSerie" /><br />
+        <label class="col-md-3 control-label">Precio :</label><input type="text" class="form-control" placeholder="Ingrese Precio" name="txtPrecio" /><br />
+        <label class="col-md-3 control-label">Stock :</label><input type="text" class="form-control" placeholder="Ingrese Stock" name="txtStock" /><br />
+        <label class="col-md-3 control-label">Descripcion :</label><input type="text" class="form-control" placeholder="Ingrese Descripcion" name="txtDescripcion" /><br />
+        <label class="col-md-3 control-label">Imagen :</label><input type="file" name="archivo" class="form-control" /><br />
+        <label class="col-md-3 control-label">Categoria :</label>@Html.DropDownList("categorias", (SelectList)ViewBag.listaCategoria, "Seleccionar Categoria", new { @class = "form-control" }) <br />
+        <label class="col-md-3 control-label">Talla :</label>@Html.DropDownList("tallas", (SelectList)ViewBag.listaTalla, "Seleccionar Talla", new { @class = "form-control" }) <br />
+        <label class="col-md-3 control-label">Diseño :</label>@Html.DropDownList("diseños", (SelectList)ViewBag.listaDiseño, "Seleccionar Diseño", new { @class = "form-control" }) <br />
+        <label class="col-md-3 control-label">Color :</label>@Html.DropDownList("colores", (SelectList)ViewBag.listaColor, "Seleccionar Color", new { @class = "form-control" }) <br />
+        <div class="modal-footer">
+            <a href="javascript:;" class="btn btn-sm btn-white" data-dismiss="modal">Close</a>
+            <button class="btn btn-sm btn-success" name="btnRegistrar">Guardar</button>
+        </div>
+    </form>
+</div>
+

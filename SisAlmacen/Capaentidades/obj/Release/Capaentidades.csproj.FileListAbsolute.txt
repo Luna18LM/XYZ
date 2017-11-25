@@ -1,0 +1,4 @@
+C:\Users\paul_\Desktop\T3 Diars tal ves con busquedas\SisAlmacen\Capaentidades\bin\Release\Capaentidades.dll
+C:\Users\paul_\Desktop\T3 Diars tal ves con busquedas\SisAlmacen\Capaentidades\bin\Release\Capaentidades.pdb
+C:\Users\paul_\Desktop\T3 Diars tal ves con busquedas\SisAlmacen\Capaentidades\obj\Release\Capaentidades.dll
+C:\Users\paul_\Desktop\T3 Diars tal ves con busquedas\SisAlmacen\Capaentidades\obj\Release\Capaentidades.pdb

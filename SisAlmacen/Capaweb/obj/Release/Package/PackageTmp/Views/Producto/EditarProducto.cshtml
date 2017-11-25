@@ -1,0 +1,28 @@
+﻿@model Capaentidades.Producto
+@{
+    ViewBag.Title = "EditarProducto";
+}
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">Editar Producto</h4>
+</div>
+<div class="modal-body">
+    <form action="/Producto/EditarProducto" method="post" id="FormEditar" enctype="multipart/form-data">
+        <label class="col-md-3 control-label">Nombre :</label><input type="text" class="form-control" placeholder="Ingrese Nombre" name="txtNombre" value="@Html.DisplayFor(model => model.Nombre)" />  <br />
+        <label class="col-md-3 control-label">Serie :</label><input type="text" class="form-control" placeholder="Ingrese Serie" name="txtSerie" value="@Html.DisplayFor(model => model.Serie)" /><br />
+        <label class="col-md-3 control-label">Precio :</label><input type="text" class="form-control" placeholder="Ingrese Precio" name="txtPrecio" value="@Html.DisplayFor(model => model.Precio)" /><br />
+        <label class="col-md-3 control-label">Stock :</label><input type="text" class="form-control" placeholder="Ingrese Stock" name="txtStock" value="@Html.DisplayFor(model => model.Stock)" /><br />
+        <label class="col-md-3 control-label">Descripcion :</label><input type="text" class="form-control" placeholder="Ingrese Descripcion" name="txtDescripcion" value="@Html.DisplayFor(model => model.Descripcion)" /><br />
+        <label class="col-md-3 control-label">Imagen :</label><input type="file" name="archivo" class="form-control" /><br />
+        <label class="col-md-3 control-label">Categoria :</label>@Html.DropDownListFor(model => model.categoria.idCategoria, (SelectList)ViewBag.listaCategoria, "Seleccionar", new { @class = "form-control" })<br />
+        <label class="col-md-3 control-label">Talla :</label>@Html.DropDownListFor(model => model.talla.idTalla, (SelectList)ViewBag.listaTalla, "Seleccionar", new { @class = "form-control" })<br />
+        <label class="col-md-3 control-label">Diseño :</label>@Html.DropDownListFor(model => model.diseño.idDiseño, (SelectList)ViewBag.listaDiseño, "Seleccionar", new { @class = "form-control" })<br />
+        <label class="col-md-3 control-label">Color :</label>@Html.DropDownListFor(model => model.color.idColor, (SelectList)ViewBag.listaColor, "Seleccionar", new { @class = "form-control" })<br />
+        <input type="hidden" class="form-control" placeholder="Ingrese Descripcion" name="txtidProducto" value="@Html.DisplayFor(model => model.idProducto)" />
+        <div class="modal-footer">
+            <a href="javascript:;" class="btn btn-sm btn-white" data-dismiss="modal">Close</a>
+            <button class="btn btn-sm btn-success" name="btnActualizar">Guardar</button>
+        </div>
+    </form>
+</div>
+

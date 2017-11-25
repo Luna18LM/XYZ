@@ -1,0 +1,39 @@
+C:\Users\Administrador\Documents\Visual Studio 2013\Projects\SisAlmacen\Capaentidades\bin\Debug\Capaentidades.dll
+C:\Users\Administrador\Documents\Visual Studio 2013\Projects\SisAlmacen\Capaentidades\bin\Debug\Capaentidades.pdb
+C:\Users\Administrador\Documents\Visual Studio 2013\Projects\SisAlmacen\Capaentidades\obj\Debug\Capaentidades.dll
+C:\Users\Administrador\Documents\Visual Studio 2013\Projects\SisAlmacen\Capaentidades\obj\Debug\Capaentidades.pdb
+H:\Diars Actual sin Parametro\SisAlmacen\Capaentidades\bin\Debug\Capaentidades.dll
+H:\Diars Actual sin Parametro\SisAlmacen\Capaentidades\bin\Debug\Capaentidades.pdb
+H:\Diars Actual sin Parametro\SisAlmacen\Capaentidades\obj\Debug\Capaentidades.csprojResolveAssemblyReference.cache
+H:\Diars Actual sin Parametro\SisAlmacen\Capaentidades\obj\Debug\Capaentidades.dll
+H:\Diars Actual sin Parametro\SisAlmacen\Capaentidades\obj\Debug\Capaentidades.pdb
+M:\Diars Actual sin Parametro\SisAlmacen\Capaentidades\bin\Debug\Capaentidades.dll
+M:\Diars Actual sin Parametro\SisAlmacen\Capaentidades\bin\Debug\Capaentidades.pdb
+M:\Diars Actual sin Parametro\SisAlmacen\Capaentidades\obj\Debug\Capaentidades.csprojResolveAssemblyReference.cache
+M:\Diars Actual sin Parametro\SisAlmacen\Capaentidades\obj\Debug\Capaentidades.dll
+M:\Diars Actual sin Parametro\SisAlmacen\Capaentidades\obj\Debug\Capaentidades.pdb
+C:\Users\paul_\Documents\Visual Studio 2013\Projects\SisAlmacen\Capaentidades\bin\Debug\Capaentidades.dll
+C:\Users\paul_\Documents\Visual Studio 2013\Projects\SisAlmacen\Capaentidades\bin\Debug\Capaentidades.pdb
+C:\Users\paul_\Documents\Visual Studio 2013\Projects\SisAlmacen\Capaentidades\obj\Debug\Capaentidades.csprojResolveAssemblyReference.cache
+C:\Users\paul_\Documents\Visual Studio 2013\Projects\SisAlmacen\Capaentidades\obj\Debug\Capaentidades.dll
+C:\Users\paul_\Documents\Visual Studio 2013\Projects\SisAlmacen\Capaentidades\obj\Debug\Capaentidades.pdb
+C:\Users\paul_\Desktop\T3 Diars tal ves con busquedas\SisAlmacen\Capaentidades\bin\Debug\Capaentidades.dll
+C:\Users\paul_\Desktop\T3 Diars tal ves con busquedas\SisAlmacen\Capaentidades\bin\Debug\Capaentidades.pdb
+C:\Users\paul_\Desktop\T3 Diars tal ves con busquedas\SisAlmacen\Capaentidades\obj\Debug\Capaentidades.csprojResolveAssemblyReference.cache
+C:\Users\paul_\Desktop\T3 Diars tal ves con busquedas\SisAlmacen\Capaentidades\obj\Debug\Capaentidades.dll
+C:\Users\paul_\Desktop\T3 Diars tal ves con busquedas\SisAlmacen\Capaentidades\obj\Debug\Capaentidades.pdb
+C:\Users\PC\OneDrive\UPN 2016 - 1\Diars\Semana 15\T3 Diars tal ves con busquedas\SisAlmacen\Capaentidades\bin\Debug\Capaentidades.dll
+C:\Users\PC\OneDrive\UPN 2016 - 1\Diars\Semana 15\T3 Diars tal ves con busquedas\SisAlmacen\Capaentidades\bin\Debug\Capaentidades.pdb
+C:\Users\PC\OneDrive\UPN 2016 - 1\Diars\Semana 15\T3 Diars tal ves con busquedas\SisAlmacen\Capaentidades\obj\Debug\Capaentidades.csprojResolveAssemblyReference.cache
+C:\Users\PC\OneDrive\UPN 2016 - 1\Diars\Semana 15\T3 Diars tal ves con busquedas\SisAlmacen\Capaentidades\obj\Debug\Capaentidades.dll
+C:\Users\PC\OneDrive\UPN 2016 - 1\Diars\Semana 15\T3 Diars tal ves con busquedas\SisAlmacen\Capaentidades\obj\Debug\Capaentidades.pdb
+C:\Users\eriki\Downloads\SisAlmacen\Capaentidades\bin\Debug\Capaentidades.dll
+C:\Users\eriki\Downloads\SisAlmacen\Capaentidades\bin\Debug\Capaentidades.pdb
+C:\Users\eriki\Downloads\SisAlmacen\Capaentidades\obj\Debug\Capaentidades.csprojResolveAssemblyReference.cache
+C:\Users\eriki\Downloads\SisAlmacen\Capaentidades\obj\Debug\Capaentidades.dll
+C:\Users\eriki\Downloads\SisAlmacen\Capaentidades\obj\Debug\Capaentidades.pdb
+C:\Users\eriki\Desktop\EVOLUCION T2\SisAlmacen Refac\SisAlmacen\Capaentidades\bin\Debug\Capaentidades.dll
+C:\Users\eriki\Desktop\EVOLUCION T2\SisAlmacen Refac\SisAlmacen\Capaentidades\bin\Debug\Capaentidades.pdb
+C:\Users\eriki\Desktop\EVOLUCION T2\SisAlmacen Refac\SisAlmacen\Capaentidades\obj\Debug\Capaentidades.csprojResolveAssemblyReference.cache
+C:\Users\eriki\Desktop\EVOLUCION T2\SisAlmacen Refac\SisAlmacen\Capaentidades\obj\Debug\Capaentidades.dll
+C:\Users\eriki\Desktop\EVOLUCION T2\SisAlmacen Refac\SisAlmacen\Capaentidades\obj\Debug\Capaentidades.pdb

@@ -1,0 +1,105 @@
+﻿@model IEnumerable<Capaentidades.Guiaremision>
+@{
+    ViewBag.Title = "ReporteGuiaSalida";
+    Layout = "~/Views/MasterIntranet.cshtml";
+}
+<script type="text/javascript" src="~/Views/Scripts/jquery-2.2.3.js"></script>
+
+@{int i = 0;}
+<ol class="breadcrumb pull-right">
+    <li><a href="@Url.Action("Principal","Intranet")">Principal</a></li>
+    <li><a href="javascript:;">Guia de Recepcion</a></li>
+    <li class="active">Reporte de Guia de Recepcion</li>
+</ol>
+<h2 class="page-header">Reporte de Guia de Recepcion</h2>
+
+<div class="modal fade" id="modal-dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- begin col-12 -->
+    <div class="col-md-12">
+        <!-- begin panel -->
+        <!--  <div>
+              <a href="javascript:;" class="btn btn-sm btn-success" data-toggle="modal" data-target="#modal-dialog" onclick="Nuevo()"><i class="fa fa-edit"></i> Nuevo</a>
+          </div>-->
+        <br />
+        <div class="panel panel-inverse" data-sortable-id="table-basic-7">
+            <div class="panel-heading">
+                <div class="panel-heading-btn">
+                    <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                    <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                    <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                    <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                </div>
+                <h4 class="panel-title">Reporte de Guia de Recepcion</h4>
+            </div>
+            <div class="panel-body">
+                <form class="form-horizontal" method="post" action="ReporteGuiaSalidaParametro/ReporteSalidaController">
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label class="control-label col-md-4 col-sm-4" for="message">Nombre :</label>
+                            <div class="col-md-6 col-sm-6">
+                                <input class="form-control" type="text" id="fullname" name="txtNombre" placeholder="Nombre de empleado" data-parsley-required="true" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-4 col-sm-4" for="message">Fecha de entrada :</label>
+                            <div class="col-md-6 col-sm-6">
+                                <input type="date" id="txtHasta" class="form-control" placeholder="Ingrese la fecha" name="txthasta" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-4 col-sm-4"></label>
+                            <div class="col-md-6 col-sm-6">
+                                <button type="submit" class="btn btn-success" name="btnBuscar">Buscar</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="panel-body">
+                <div class="table-responsive">
+                    <table class="table" align="center">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Fecha de Salida</th>
+                                <th>Nombre del Empleado</th>
+                                <th>Apellidos del Empleado</th>
+                                <th>Distribuidor</th>
+                                <th>Ruc</th>
+                                <th>Total</th>
+                                <th>Detalles</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var m in Model)
+                            {
+                                i++;
+                                <tr>
+                                    <td>@i</td>
+                                    <td>@Html.DisplayFor(modelItem => m.FechaSalida)</td>
+                                    <td>@Html.DisplayFor(modelItem => m.usuario.Nombre)</td>
+                                    <td>@Html.DisplayFor(modelItem => m.usuario.ApellidoPaterno)  @Html.DisplayFor(modelItem => m.usuario.ApellidoMaterno)</td>
+                                    <td>@Html.DisplayFor(modelItem => m.nomDistribuidor)</td>
+                                    <td>@Html.DisplayFor(modelItem => m.Ruc)</td>
+                                    <td>@Html.DisplayFor(modelItem => m.Total)</td>
+                                    <td><button class="btn btn-danger btn-icon btn-circle btn-sm" data-toggle="modal" data-target="#modal-dialog" onclick="Eliminar(@m.idGuiaRemi)"><i class="fa fa-exclamation"></i></button></td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- end panel -->
+    </div>
+    <!-- end col-12 -->
+</div>
+

@@ -1,0 +1,91 @@
+﻿@model  IEnumerable<Capaentidades.Producto>
+@{
+    ViewBag.Title = "ReporteProductoMin";
+    Layout = "~/Views/MasterIntranet.cshtml";
+}
+@{int i = 0;}
+<ol class="breadcrumb pull-right">
+    <li><a href="@Url.Action("Principal","Intranet")">Principal</a></li>
+    <li><a href="javascript:;">Reporte</a></li>
+    <li class="active">Stock Minimo Productos</li>
+</ol>
+<h2 class="page-header">Listado de Stock Minimo de Producto</h2>
+
+<div class="modal fade" id="modal-dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- begin col-12 -->
+    <div class="col-md-12">
+        <div class="panel panel-inverse" data-sortable-id="table-basic-7">
+            <div class="panel-heading">
+                <div class="panel-heading-btn">
+                    <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                    <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                    <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                    <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                </div>
+                <h4 class="panel-title">Listado de Producto</h4>
+            </div>
+            <div class="panel-body">
+                <div class="table-responsive">
+                    <table class="table" align="center">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Nombre</th>
+                                <th>Descripcion</th>
+                                <th>Precio</th>
+                                <th>Stock</th>
+                                <th>Serie</th>
+                                <th>Imagen</th>
+                                <th>Categoria</th>
+                                <th>Talla</th>
+                                <th>Diseño</th>
+                                <th>Color</th>
+                                <th>Detalle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var m in Model)
+                            {
+                                i++;
+                                <tr>
+                                    <td>@i</td>
+                                    <td>@Html.DisplayFor(modelItem => m.Nombre)</td>
+                                    <td>@Html.DisplayFor(modelItem => m.Descripcion)</td>
+                                    <td>@Html.DisplayFor(modelItem => m.Precio)</td>
+                                    <td>@Html.DisplayFor(modelItem => m.Stock)</td>
+                                    <td>@Html.DisplayFor(modelItem => m.Serie)</td>
+                                    <td><img src="~/Recursos/Imagenes/Productos/@Html.DisplayFor(modelitem=> m.Imagen)" style="width:30px; height: 30px" /></td>
+                                    <td>@Html.DisplayFor(modelItem => m.categoria.Nombre)</td>
+                                    <td>@Html.DisplayFor(modelItem => m.talla.Nombre)</td>
+                                    <td>@Html.DisplayFor(modelItem => m.diseño.Nombre)</td>
+                                    <td>@Html.DisplayFor(modelItem => m.color.Nombre)</td>
+                                    <td><button class="btn btn-success btn-icon btn-circle btn-sm" data-toggle="modal" data-target="#modal-dialog" onclick="Detalle(@m.idProducto)"><i class="fa fa-exclamation"></i></button></td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- end panel -->
+    </div>
+    <!-- end col-12 -->
+</div>
+
+<script type="text/javascript">
+
+    function Detalle(idProducto) {
+        var id = idProducto.toString();
+        var url = "@Url.Action("DetalleProducto", "Producto")/" + id;
+        $(".modal-content").load(url);
+    }
+
+</script>

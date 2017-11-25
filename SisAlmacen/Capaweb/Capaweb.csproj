@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0DC46530-1A67-4B6F-9126-15D57D832CEC}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Capaweb</RootNamespace>
+    <AssemblyName>Capaweb</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\CategoriaController.cs" />
+    <Compile Include="Controllers\ColorController.cs" />
+    <Compile Include="Controllers\CorreoController.cs" />
+    <Compile Include="Controllers\DiseñoController.cs" />
+    <Compile Include="Controllers\DistribuidorController.cs" />
+    <Compile Include="Controllers\GuiarecepcionController.cs" />
+    <Compile Include="Controllers\GuiaSalidaController.cs" />
+    <Compile Include="Controllers\InicioController.cs" />
+    <Compile Include="Controllers\IntranetController.cs" />
+    <Compile Include="Controllers\ProductoController.cs" />
+    <Compile Include="Controllers\ReporteRecepcionController.cs" />
+    <Compile Include="Controllers\ReporteSalidaController.cs" />
+    <Compile Include="Controllers\TallaController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Global.asax" />
+    <Content Include="Recursos\Bootstrape\assets\fonts\custom-set.eot" />
+    <Content Include="Recursos\Bootstrape\assets\fonts\custom-set.ttf" />
+    <Content Include="Recursos\Bootstrape\assets\fonts\custom-set.woff" />
+    <Content Include="Recursos\Bootstrape\assets\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="Recursos\Bootstrape\assets\fonts\fontawesome-webfonte0a5.eot" />
+    <Content Include="Recursos\Bootstrape\assets\fonts\fontawesome-webfonte0a5.ttf" />
+    <Content Include="Recursos\Bootstrape\assets\fonts\fontawesome-webfonte0a5.woff" />
+    <Content Include="Recursos\Bootstrape\assets\images\demo\revolution_slider\video1.mp4" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\bootstrap\fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\less\bordered-pulled.less" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\less\core.less" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\less\fixed-width.less" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\less\font-awesome.less" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\less\icons.less" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\less\larger.less" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\less\list.less" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\less\mixins.less" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\less\path.less" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\less\rotated-flipped.less" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\less\spinning.less" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\less\stacked.less" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\less\variables.less" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\scss\font-awesome.scss" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\scss\_core.scss" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\scss\_icons.scss" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\scss\_larger.scss" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\scss\_list.scss" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\scss\_mixins.scss" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\scss\_path.scss" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\scss\_spinning.scss" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\scss\_stacked.scss" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\scss\_variables.scss" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\font\revicons90c6.eot" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\font\revicons90c6.ttf" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\font\revicons90c6.woff" />
+    <Content Include="Recursos\Bootstrapi\assets\css\animate.min.css" />
+    <Content Include="Recursos\Bootstrapi\assets\css\assets\plugins\superbox\img\close.html" />
+    <Content Include="Recursos\Bootstrapi\assets\css\invoice-print.min.css" />
+    <Content Include="Recursos\Bootstrapi\assets\css\style-responsive.min.css" />
+    <Content Include="Recursos\Bootstrapi\assets\css\style.min.css" />
+    <Content Include="Recursos\Bootstrapi\assets\css\theme\default.css" />
+    <Content Include="Recursos\Bootstrapi\assets\img\login-bg\Zapatos-hombre.png" />
+    <Content Include="Recursos\Bootstrapi\assets\img\logo.png" />
+    <Content Include="Recursos\Bootstrapi\assets\img\product\product-1.png" />
+    <Content Include="Recursos\Bootstrapi\assets\img\product\product-2.png" />
+    <Content Include="Recursos\Bootstrapi\assets\img\product\product-3.png" />
+    <Content Include="Recursos\Bootstrapi\assets\img\user-13.jpg" />
+    <Content Include="Recursos\Bootstrapi\assets\js\apps.min.js" />
+    <Content Include="Recursos\Bootstrapi\assets\js\email-compose.demo.min.js" />
+    <Content Include="Recursos\Bootstrapi\assets\js\form-plugins.demo.min.js" />
+    <Content Include="Recursos\Bootstrapi\assets\js\ui-modal-notification.demo.min.js" />
+    <Content Include="Recursos\Bootstrapi\assets\plugins\bootstrap-datepicker\css\datepicker.css" />
+    <Content Include="Recursos\Bootstrapi\assets\plugins\bootstrap-datepicker\css\datepicker3.css" />
+    <Content Include="Recursos\Bootstrapi\assets\plugins\bootstrap-datepicker\js\bootstrap-datepicker.js" />
+    <Content Include="Recursos\Bootstrapi\assets\plugins\bootstrap-eonasdan-datetimepicker\build\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="Recursos\Bootstrapi\assets\plugins\bootstrap-eonasdan-datetimepicker\build\js\bootstrap-datetimepicker.min.js" />
+    <Content Include="Recursos\Bootstrapi\assets\plugins\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Recursos\Bootstrapi\assets\plugins\bootstrap\fonts\glyphicons-halflings-regular.html" />
+    <Content Include="Recursos\Bootstrapi\assets\plugins\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Recursos\Bootstrapi\assets\plugins\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Recursos\Bootstrapi\assets\plugins\font-awesome\fonts\fontawesome-webfont914c.eot" />
+    <Content Include="Recursos\Bootstrapi\assets\plugins\font-awesome\fonts\fontawesome-webfont914c.ttf" />
+    <Content Include="Recursos\Bootstrapi\assets\plugins\font-awesome\fonts\fontawesome-webfont914c.woff" />
+    <Content Include="Recursos\Bootstrapi\assets\plugins\font-awesome\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="Recursos\Bootstrapi\assets\plugins\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Recursos\Bootstrapi\assets\plugins\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Recursos\Bootstrapi\assets\plugins\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Recursos\Bootstrapi\assets\plugins\bootstrap\fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="Views\ReporteRecepcion\ReporteGuiaRecepcion.cshtml" />
+    <Content Include="Views\ReporteRecepcion\ReporteGuiaParametro.cshtml" />
+    <Content Include="Views\ReporteSalida\ReporteGuiaSalida.cshtml" />
+    <Content Include="Views\ReporteSalida\ReporteGuiaSalidaParametro.cshtml" />
+    <None Include="Properties\PublishProfiles\SisAlmacen.pubxml" />
+    <None Include="Views\Scripts\jquery-2.2.3.intellisense.js" />
+    <Content Include="Recursos\Bootstrape\assets\css\css9292.css" />
+    <Content Include="Recursos\Bootstrape\assets\css\essentials.css" />
+    <Content Include="Recursos\Bootstrape\assets\css\font-awesome.css" />
+    <Content Include="Recursos\Bootstrape\assets\css\layout-responsive.css" />
+    <Content Include="Recursos\Bootstrape\assets\css\layout.css" />
+    <Content Include="Recursos\Bootstrape\assets\fonts\custom-set.dev.svg" />
+    <Content Include="Recursos\Bootstrape\assets\fonts\custom-set.svg" />
+    <Content Include="Recursos\Bootstrape\assets\fonts\fontawesome-webfonte0a5.html" />
+    <Content Include="Recursos\Bootstrape\assets\fonts\fontawesome-webfonte0a5.svg" />
+    <Content Include="Recursos\Bootstrape\assets\images\1x1.png" />
+    <Content Include="Recursos\Bootstrape\assets\images\demo\revolution_slider\calzado2.png" />
+    <Content Include="Recursos\Bootstrape\assets\images\demo\revolution_slider\calzado3.png" />
+    <Content Include="Recursos\Bootstrape\assets\images\demo\revolution_slider\calzado4.png" />
+    <Content Include="Recursos\Bootstrape\assets\images\demo\revolution_slider\calzado5.png" />
+    <Content Include="Recursos\Bootstrape\assets\images\demo\revolution_slider\dummy.html" />
+    <Content Include="Recursos\Bootstrape\assets\images\demo\revolution_slider\leftarrow.png" />
+    <Content Include="Recursos\Bootstrape\assets\images\demo\revolution_slider\rightarrow.png" />
+    <Content Include="Recursos\Bootstrape\assets\images\demo\revolution_slider\slider3.jpg" />
+    <Content Include="Recursos\Bootstrape\assets\images\demo\revolution_slider\slider5.jpg" />
+    <Content Include="Recursos\Bootstrape\assets\images\demo\revolution_slider\slider7.jpg" />
+    <Content Include="Recursos\Bootstrape\assets\images\demo\revolution_slider\sliderbg.jpg" />
+    <Content Include="Recursos\Bootstrape\assets\images\demo\revolution_slider\text_slider.jpg" />
+    <Content Include="Recursos\Bootstrape\assets\images\demo\revolution_slider\transparent.png" />
+    <Content Include="Recursos\Bootstrape\assets\images\demo\revolution_slider\videoshadow.png" />
+    <Content Include="Recursos\Bootstrape\assets\images\header_shadow.png" />
+    <Content Include="Recursos\Bootstrape\assets\images\loading.gif" />
+    <Content Include="Recursos\Bootstrape\assets\images\logo.png" />
+    <Content Include="Recursos\Bootstrape\assets\js\slider_revolution.js" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\bootstrap\fonts\glyphicons-halflings-regular.html" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\css\font-awesome.css" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\jquery-2.1.4.min.js" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\jquery.appear.js" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\jquery.cookie.js" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\jquery.easing.1.3.js" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\jquery.isotope.js" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\jquery.nav.min.js" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\arrowleft.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\arrowright.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\arrow_left.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\arrow_left2.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\arrow_right.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\arrow_right2.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\boxed_bgtile.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\bullet.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\bullets.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\bullets2.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\bullet_boxed.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\coloredbg.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\gridtile.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\gridtile_3x3.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\gridtile_3x3_white.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\gridtile_white.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\large_left.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\large_right.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\loader.gif" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\navigdots.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\navigdots_bgtile.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\shadow1.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\shadow2.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\shadow3.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\small_left.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\small_left_boxed.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\small_right.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\small_right_boxed.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\assets\timer.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\css\settings.css" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\font\revicons90c6.svg" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\images\gradient\g30.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\images\gradient\g40.png" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\js\jquery.themepunch.tools.min.js" />
+    <Content Include="Recursos\Bootstrape\assets\plugins\revolution-slider\videojs\demo.captions.html" />
+    <Content Include="Recursos\Bootstrapi\assets\plugins\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Recursos\Bootstrapi\assets\plugins\font-awesome\fonts\fontawesome-webfont914c.html" />
+    <Content Include="Recursos\Bootstrapi\assets\plugins\font-awesome\fonts\fontawesome-webfont914c.svg" />
+    <Content Include="Recursos\Bootstrapi\assets\plugins\jquery-cookie\jquery.cookie.js" />
+    <Content Include="Recursos\Bootstrapi\assets\plugins\jquery-ui\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Recursos\Bootstrapi\assets\plugins\jquery-ui\ui\minified\jquery-ui.min.js" />
+    <Content Include="Recursos\Bootstrapi\assets\plugins\jquery\jquery-1.9.1.min.js" />
+    <Content Include="Recursos\Bootstrapi\assets\plugins\jquery\jquery-migrate-1.1.0.min.js" />
+    <Content Include="Recursos\Bootstrapi\assets\plugins\pace\pace.min.js" />
+    <Content Include="Recursos\Bootstrapi\assets\plugins\slimscroll\jquery.slimscroll.min.js" />
+    <Content Include="Recursos\Imagenes\Productos\sandalias.jpg" />
+    <Content Include="Recursos\Imagenes\Productos\vestir.jpg" />
+    <Content Include="Recursos\Imagenes\Productos\zapatos.jpg" />
+    <Content Include="Recursos\Imagenes\Usuarios\eduard.jpg" />
+    <Content Include="Recursos\Imagenes\Usuarios\erika.jpg" />
+    <Content Include="Recursos\Validaciones\jquery.js" />
+    <Content Include="Recursos\Validaciones\jquery.validate.js" />
+    <Content Include="Views\Scripts\jquery-2.2.3.js" />
+    <Content Include="Views\Scripts\jquery-2.2.3.min.js" />
+    <Content Include="Views\Scripts\jquery-ui.css" />
+    <Content Include="Views\Scripts\jquery-ui.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\MasterIntranet.cshtml" />
+    <Content Include="Views\Inicio\Index.cshtml" />
+    <Content Include="Views\Intranet\Login.cshtml" />
+    <Content Include="Views\Intranet\Principal.cshtml" />
+    <Content Include="Views\Categoria\ListarCategoria.cshtml" />
+    <Content Include="Views\Categoria\NuevaCatetogia.cshtml" />
+    <Content Include="Views\Categoria\EditarCategoria.cshtml" />
+    <Content Include="Views\Color\ListarColor.cshtml" />
+    <Content Include="Views\Diseño\ListarDiseño.cshtml" />
+    <Content Include="Views\Distribuidor\ListarDistribuidor.cshtml" />
+    <Content Include="Views\Talla\ListarTalla.cshtml" />
+    <Content Include="Views\Color\NuevoColor.cshtml" />
+    <Content Include="Views\Diseño\NuevoDiseño.cshtml" />
+    <Content Include="Views\Distribuidor\NuevoDistribuidor.cshtml" />
+    <Content Include="Views\Talla\NuevaTalla.cshtml" />
+    <Content Include="Views\Color\EditarColor.cshtml" />
+    <Content Include="Views\Diseño\EditarDiseño.cshtml" />
+    <Content Include="Views\Distribuidor\EditarDistribuidor.cshtml" />
+    <Content Include="Views\Talla\EditarTalla.cshtml" />
+    <Content Include="Views\Distribuidor\EliminarDistribuidor.cshtml" />
+    <Content Include="Views\Categoria\EliminarCategoria.cshtml" />
+    <Content Include="Views\Color\EliminarColor.cshtml" />
+    <Content Include="Views\Diseño\EliminarDiseño.cshtml" />
+    <Content Include="Views\Talla\EliminarTalla.cshtml" />
+    <Content Include="Views\Intranet\EditarUsuario.cshtml" />
+    <Content Include="Views\Producto\ListarProducto.cshtml" />
+    <Content Include="Views\Producto\NuevoProducto.cshtml" />
+    <Content Include="Views\Producto\EditarProducto.cshtml" />
+    <Content Include="Views\Producto\EliminarProducto.cshtml" />
+    <Content Include="Views\Guiarecepcion\ListarProducto.cshtml" />
+    <Content Include="Views\Guiarecepcion\Guiarecepcion.cshtml" />
+    <Content Include="Views\GuiaSalida\GuiaSalida.cshtml" />
+    <Content Include="Views\GuiaSalida\ListarProductos.cshtml" />
+    <Content Include="Views\GuiaSalida\ListarDistribuidor.cshtml" />
+    <Content Include="Views\Correo\EnviarCorreo.cshtml" />
+    <Content Include="Views\Producto\Listarproductonombre.cshtml" />
+    <Content Include="Views\Producto\ReporteProductoMin.cshtml" />
+    <Content Include="Views\Producto\DetalleProducto.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Recursos\Bootstrapi\assets\img\transparent\" />
+    <Folder Include="Recursos\Bootstrapi\assets\plugins\bootstrap-timepicker\css\" />
+    <Folder Include="Recursos\Bootstrapi\assets\plugins\bootstrap-timepicker\js\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Scripts\jquery-2.2.3.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Capadatos\Capadatos.csproj">
+      <Project>{95730a00-fcfb-4d4a-aabf-f9fe5c813fdf}</Project>
+      <Name>Capadatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Capaentidades\Capaentidades.csproj">
+      <Project>{6a1cb571-53fe-42ca-82b2-8cbf77532f10}</Project>
+      <Name>Capaentidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Capalogica\Capalogica.csproj">
+      <Project>{98ae10e4-a9e1-490c-b8d4-92c12e6303d3}</Project>
+      <Name>Capalogica</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3925</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3755/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

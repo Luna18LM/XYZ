@@ -1,0 +1,21 @@
+﻿@model Capaentidades.Talla
+@{
+    ViewBag.Title = "EditarTalla";
+}
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">Editar Color</h4>
+</div>
+<div class="modal-body">
+    <form action="EditarTalla/TallaController" method="post">
+        <label class="col-md-3 control-label">Nombre :</label><input type="text" class="form-control" placeholder="Ingrese Nombre" name="txtNombre" value="@Html.DisplayFor(model => model.Nombre)" required/>  <br />
+        <label class="col-md-3 control-label">Descripcion :</label><input type="text" class="form-control" placeholder="Ingrese Descripcion" name="txtDescripcion" value="@Html.DisplayFor(model => model.Descripcion)" />
+        <input type="hidden" class="form-control" placeholder="Ingrese Descripcion" name="txtidDiseño" value="@Html.DisplayFor(model => model.idTalla)" />
+
+        <div class="modal-footer">
+            <a href="javascript:;" class="btn btn-sm btn-white" data-dismiss="modal">Close</a>
+            <button class="btn btn-sm btn-success" name="btnActualizar">Actualizar</button>
+        </div>
+    </form>
+</div>

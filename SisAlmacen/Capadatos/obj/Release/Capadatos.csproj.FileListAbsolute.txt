@@ -1,0 +1,7 @@
+C:\Users\paul_\Desktop\T3 Diars tal ves con busquedas\SisAlmacen\Capadatos\bin\Release\Capadatos.dll
+C:\Users\paul_\Desktop\T3 Diars tal ves con busquedas\SisAlmacen\Capadatos\bin\Release\Capadatos.pdb
+C:\Users\paul_\Desktop\T3 Diars tal ves con busquedas\SisAlmacen\Capadatos\bin\Release\Capaentidades.dll
+C:\Users\paul_\Desktop\T3 Diars tal ves con busquedas\SisAlmacen\Capadatos\bin\Release\Capaentidades.pdb
+C:\Users\paul_\Desktop\T3 Diars tal ves con busquedas\SisAlmacen\Capadatos\obj\Release\Capadatos.csprojResolveAssemblyReference.cache
+C:\Users\paul_\Desktop\T3 Diars tal ves con busquedas\SisAlmacen\Capadatos\obj\Release\Capadatos.dll
+C:\Users\paul_\Desktop\T3 Diars tal ves con busquedas\SisAlmacen\Capadatos\obj\Release\Capadatos.pdb
