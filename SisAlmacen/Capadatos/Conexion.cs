@@ -33,7 +33,7 @@ namespace Capadatos
             //    "Initial Catalog=sysAlmacenEVO; " +
             //    "ID=Administrador; Password=Erika123;";
 
-            cn.ConnectionString = "Data Source=tcp:almacenevo.database.windows.net,1433;Initial Catalog=sysAlmacenEVO;User ID=Administrador;Password=Erika123";
+            cn.ConnectionString = "Data Source=sisalmacendb.cmdjfoqsbg9m.us-east-2.rds.amazonaws.com,1433;Initial Catalog=SisAlmacen;User ID=erika;Password=Admin123";
 
 
 

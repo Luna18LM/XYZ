@@ -79,3 +79,12 @@ C:\Users\eriki\Desktop\EVOLUCION T2\SisAlmacen Refac\SisAlmacen\Capalogica\bin\D
 C:\Users\eriki\Desktop\EVOLUCION T2\SisAlmacen Refac\SisAlmacen\Capalogica\obj\Debug\Capalogica.csprojResolveAssemblyReference.cache
 C:\Users\eriki\Desktop\EVOLUCION T2\SisAlmacen Refac\SisAlmacen\Capalogica\obj\Debug\Capalogica.dll
 C:\Users\eriki\Desktop\EVOLUCION T2\SisAlmacen Refac\SisAlmacen\Capalogica\obj\Debug\Capalogica.pdb
+D:\GIT\XYZ\SisAlmacen\Capalogica\bin\Debug\Capalogica.dll
+D:\GIT\XYZ\SisAlmacen\Capalogica\bin\Debug\Capalogica.pdb
+D:\GIT\XYZ\SisAlmacen\Capalogica\bin\Debug\Capadatos.dll
+D:\GIT\XYZ\SisAlmacen\Capalogica\bin\Debug\Capaentidades.dll
+D:\GIT\XYZ\SisAlmacen\Capalogica\bin\Debug\Capadatos.pdb
+D:\GIT\XYZ\SisAlmacen\Capalogica\bin\Debug\Capaentidades.pdb
+D:\GIT\XYZ\SisAlmacen\Capalogica\obj\Debug\Capalogica.csprojResolveAssemblyReference.cache
+D:\GIT\XYZ\SisAlmacen\Capalogica\obj\Debug\Capalogica.dll
+D:\GIT\XYZ\SisAlmacen\Capalogica\obj\Debug\Capalogica.pdb

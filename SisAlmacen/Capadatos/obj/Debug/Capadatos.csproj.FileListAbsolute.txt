@@ -61,3 +61,10 @@ C:\Users\eriki\Desktop\EVOLUCION T2\SisAlmacen Refac\SisAlmacen\Capadatos\bin\De
 C:\Users\eriki\Desktop\EVOLUCION T2\SisAlmacen Refac\SisAlmacen\Capadatos\obj\Debug\Capadatos.csprojResolveAssemblyReference.cache
 C:\Users\eriki\Desktop\EVOLUCION T2\SisAlmacen Refac\SisAlmacen\Capadatos\obj\Debug\Capadatos.dll
 C:\Users\eriki\Desktop\EVOLUCION T2\SisAlmacen Refac\SisAlmacen\Capadatos\obj\Debug\Capadatos.pdb
+D:\GIT\XYZ\SisAlmacen\Capadatos\bin\Debug\Capadatos.dll
+D:\GIT\XYZ\SisAlmacen\Capadatos\bin\Debug\Capadatos.pdb
+D:\GIT\XYZ\SisAlmacen\Capadatos\bin\Debug\Capaentidades.dll
+D:\GIT\XYZ\SisAlmacen\Capadatos\bin\Debug\Capaentidades.pdb
+D:\GIT\XYZ\SisAlmacen\Capadatos\obj\Debug\Capadatos.csprojResolveAssemblyReference.cache
+D:\GIT\XYZ\SisAlmacen\Capadatos\obj\Debug\Capadatos.dll
+D:\GIT\XYZ\SisAlmacen\Capadatos\obj\Debug\Capadatos.pdb

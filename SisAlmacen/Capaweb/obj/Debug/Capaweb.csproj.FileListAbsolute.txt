@@ -444,3 +444,46 @@ C:\Users\eriki\Desktop\EVOLUCION T2\SisAlmacen Refac\SisAlmacen\Capaweb\bin\es\S
 C:\Users\eriki\Desktop\EVOLUCION T2\SisAlmacen Refac\SisAlmacen\Capaweb\obj\Debug\Capaweb.csprojResolveAssemblyReference.cache
 C:\Users\eriki\Desktop\EVOLUCION T2\SisAlmacen Refac\SisAlmacen\Capaweb\obj\Debug\Capaweb.dll
 C:\Users\eriki\Desktop\EVOLUCION T2\SisAlmacen Refac\SisAlmacen\Capaweb\obj\Debug\Capaweb.pdb
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\Capaweb.dll.config
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\Capaweb.dll
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\Capaweb.pdb
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\Capadatos.dll
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\Capaentidades.dll
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\Capalogica.dll
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\Microsoft.Web.Infrastructure.dll
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\Newtonsoft.Json.dll
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\System.Net.Http.Formatting.dll
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\System.Web.Helpers.dll
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\System.Web.Http.dll
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\System.Web.Http.WebHost.dll
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\System.Web.Mvc.dll
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\System.Web.Razor.dll
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\System.Web.WebPages.Deployment.dll
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\System.Web.WebPages.dll
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\System.Web.WebPages.Razor.dll
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\Capadatos.pdb
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\Capaentidades.pdb
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\Capalogica.pdb
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\Newtonsoft.Json.xml
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\System.Net.Http.Formatting.xml
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\System.Web.Helpers.xml
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\System.Web.Http.xml
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\System.Web.Http.WebHost.xml
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\System.Web.Mvc.xml
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\System.Web.Razor.xml
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\System.Web.WebPages.xml
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\System.Web.WebPages.Deployment.xml
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\System.Web.WebPages.Razor.xml
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\es\System.Net.Http.Formatting.resources.dll
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\es\System.Web.Helpers.resources.dll
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\es\System.Web.Http.resources.dll
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\es\System.Web.Http.WebHost.resources.dll
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\es\System.Web.Mvc.resources.dll
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\es\System.Web.Razor.resources.dll
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\es\System.Web.WebPages.resources.dll
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\GIT\XYZ\SisAlmacen\Capaweb\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\GIT\XYZ\SisAlmacen\Capaweb\obj\Debug\Capaweb.csprojResolveAssemblyReference.cache
+D:\GIT\XYZ\SisAlmacen\Capaweb\obj\Debug\Capaweb.dll
+D:\GIT\XYZ\SisAlmacen\Capaweb\obj\Debug\Capaweb.pdb
