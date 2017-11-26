@@ -1,9 +1,0 @@
-C:\Users\paul_\Desktop\T3 Diars tal ves con busquedas\SisAlmacen\Capalogica\bin\Release\Capalogica.dll
-C:\Users\paul_\Desktop\T3 Diars tal ves con busquedas\SisAlmacen\Capalogica\bin\Release\Capalogica.pdb
-C:\Users\paul_\Desktop\T3 Diars tal ves con busquedas\SisAlmacen\Capalogica\bin\Release\Capadatos.dll
-C:\Users\paul_\Desktop\T3 Diars tal ves con busquedas\SisAlmacen\Capalogica\bin\Release\Capaentidades.dll
-C:\Users\paul_\Desktop\T3 Diars tal ves con busquedas\SisAlmacen\Capalogica\bin\Release\Capadatos.pdb
-C:\Users\paul_\Desktop\T3 Diars tal ves con busquedas\SisAlmacen\Capalogica\bin\Release\Capaentidades.pdb
-C:\Users\paul_\Desktop\T3 Diars tal ves con busquedas\SisAlmacen\Capalogica\obj\Release\Capalogica.csprojResolveAssemblyReference.cache
-C:\Users\paul_\Desktop\T3 Diars tal ves con busquedas\SisAlmacen\Capalogica\obj\Release\Capalogica.dll
-C:\Users\paul_\Desktop\T3 Diars tal ves con busquedas\SisAlmacen\Capalogica\obj\Release\Capalogica.pdb
