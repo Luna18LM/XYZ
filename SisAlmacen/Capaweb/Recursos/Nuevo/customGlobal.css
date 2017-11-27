@@ -1,0 +1,309 @@
+﻿.colorbasicoHorario {
+background-color:#ff0000 !important;
+}
+/* Fin Css Crear Horarios  */
+.cnt-text-label {
+    text-align: left !important;
+    margin-bottom: 0 !important;
+    padding-top: 7px !important;
+    padding-left: 19px !important;
+}
+.cnt-text-labelR {
+    text-align: right !important;
+    margin-bottom: 0 !important;
+    padding-top: 7px !important;
+    padding-left: 19px !important;
+}
+.cnt-text-label-1 {
+    text-align: left !important;
+    margin-bottom: 0 !important;
+    padding-top: 7px !important;
+    padding-left: 30px !important;
+}
+.cnt-text {
+    text-align: left!important;
+    margin-bottom: 0  !important;
+    padding-top: 7px !important;
+    padding-left: 19px !important;
+    word-break: break-all !important;
+}
+.cnt-controles {
+    text-align: left !important;
+    margin-bottom: 0 !important;
+    padding-top: 1px !important;
+    padding-left: 19px !important;
+    padding-right: 15px;
+}
+
+.text-custom {
+    font-size:14px;
+    font-weight:bold;
+}
+.control-height {
+    height:35px !important;
+}
+.mleft10 {
+    margin-left:10px;
+}
+.padd4 {
+    padding: 4px !important;
+}
+.padd12 {
+    padding: 12px !important;
+}
+
+.padd15 {
+    padding: 15px !important;
+}
+.padd-left-21 {
+    padding-left: 21px;
+}
+.padd-left-30{
+    padding-left: 30px;
+}
+.padd-left-100 {
+    padding-left: 100px;
+}
+.padd-1 {
+    padding: 2px 3px !important;
+}
+.paddleft-3 {
+    padding-left: 3px !important;
+    padding-right: 15px;
+}
+.paddleft-4 {
+    padding-left: 4px !important;
+}
+
+.paddright-15 {
+    padding-right: 15px !important;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.width-91 {
+        width: 91px;
+}
+
+.btnAssign {
+    height: 240px;
+    margin-top: 149px;
+    text-align: center;
+}
+@media (min-width:299px) and (max-width:1199px) {
+    .btnAssign {
+        text-align: center;
+        height: 100px;
+        margin-top: 4px;
+    }
+}
+@media (min-width:299px) and (max-width:338px) {
+    .mleft10 {
+        margin-left:0px;
+    }
+}
+@media (min-width:299px) and (max-width:767px) {
+    .cnt-text-min {
+        padding-left:19px !important;
+    }
+}
+
+@media (min-width:299px) and (max-width:767px) {
+    .cnt-text-min-2 {
+        padding-left:12px !important;
+    }
+}
+
+@media (min-width:299px) and (max-width:338px) {
+    .text-size {
+        font-size:11px !important;
+    }
+}
+
+@media (min-width:768px) and (max-width:800px) {
+    .hidden-text {
+        display:none;
+    }
+}
+div.grid-container select {
+    border: 1px solid #E5E7E9;
+    border-radius: 6px;
+    height: 30px;
+    padding: 4px !important;
+    outline: none;
+}
+
+div.grid-container label input {
+   height:30px !important; 
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    margin-left:0 !important;
+}
+
+table.dataTable tbody tr.selected {
+    background-color: #EEEEEE !important;
+}
+td.details-control {
+    background: url('http://i.imgur.com/SD7Dz.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('http://i.imgur.com/SD7Dz.png') no-repeat center center;
+}
+.hide-modal {
+  display: none; 
+}
+.colorNotAcc {
+    color: #F00;
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height: 22px;
+    font-size: 35px;
+    margin-bottom:33px;
+}
+.modal-dialog-popup {
+    width: 415px !important;
+    margin: 30px auto;
+    display:block !important;
+}
+.pos-Abs {
+    position:absolute;
+}
+.pos-Rel {
+    position:relative;
+}
+.style-SearchDis {
+    width:422px;
+    vertical-align:middle;
+    display:inline-block;
+    position:static;
+    margin-top:5px;
+}
+.style-NotificationDis {
+    width: 201px;
+    vertical-align: middle;
+    display: inline-block;
+    position: static;
+     margin-top:7px;
+}
+.style-GestionDis {
+    width:160px;
+    vertical-align:middle;
+    display:inline-block;
+    position:static;
+    margin-top:1px;
+}
+.mrg-R5 {
+    margin-right:5px;
+}
+
+@media (min-width:920px) and (max-width:1042px) {
+    .style-SearchDis {
+        width:307px;
+        vertical-align:middle;
+        display:inline-block;
+        position:relative;
+    }
+}
+
+.stlImgBanner {
+    max-height: 255px;
+    max-width: 94%;
+    margin:0 auto;
+}
+
+@media (min-width:768px) and (max-width:1296px) {
+    .stlImgBanner {
+        max-height: 255px;
+        max-width: 82%;
+        margin:0 auto;
+    }
+}
+
+@media (min-width:415px) and (max-width:571px) {
+    .stlImgBanner {
+        max-height: 255px;
+        max-width: 91%;
+        margin:0 auto;
+    }
+}
+
+@media (min-width:294px) and (max-width:414px) {
+    .stlImgBanner {
+        max-height: 255px;
+        max-width: 87%;
+        margin:0 auto;
+    }
+}
+
+.cssRow {
+    margin-left: -15px;
+    margin-right: -57px;
+}
+
+.wdSProduct {
+    width:700px;
+    margin-left:-37px
+}
+
+
+@media (min-width:749px) and (max-width:767px) {
+    .wdSProduct {
+        width:700px;
+        margin-left:16px;
+    }
+}
+@media (min-width:294px) and (max-width:748px) {
+    .wdSProduct {
+        width:100%;
+        margin-left:0px;
+    }
+     .mostrarscroll {
+        overflow-y:initial !important;
+    }
+}
+
+/* Usado para cuadros de refrigerio en Guardar horario BUG_R08*/
+@media only screen and (max-width:767px) {
+    div#Div1.form-horizontal.form-bordered {
+        padding-right: 15px;
+    }
+}
+
+/*Usado para editor de nota (selector de color) en Plantilla Memorandum*/
+@media only screen and (max-width: 767px) and (min-width:350px){
+    div.note-editor div.note-toolbar.btn-toolbar div.note-color.btn-group.open ul.dropdown-menu {
+        left: initial;
+        right: 100%;
+    }
+}
+
+/*Usado para los ucSearchEmployeev5 que no se ven nada bien de manera responsive*/
+input#txtNombreEmployee {
+    /*Resetea el input*/
+    width: 100% !important;
+}
+input#txtApePaternoEmployee {
+    /*Resetea el input*/
+    width: 100% !important;
+}
+    /*Resetea el botón de búsqueda*/
+div#FromBeneficios .form-group div span a, a#ContentPlaceHolder_ContentPlaceHolder2_ucSearchEmployeev5_btnSearchName{
+    margin-left: -3px !important;
+}
+
+/*Usado para que la tabla de agregar Beneficio a Empleado sea responsiva*/
+.form-horizontal.form-bordered {
+    width: initial !important;
+}
+
+
+div#tbDataTable_filter.dataTables_filter, div.datatables-header>div.col-xs-12 {
+    padding-right: 15px !important;
+}
+
+.row.form-group {
+    margin-right: 0px;
+}

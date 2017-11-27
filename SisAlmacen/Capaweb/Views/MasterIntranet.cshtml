@@ -8,6 +8,14 @@
     <meta content="" name="description" />
     <meta content="" name="author" />
 
+
+    @* VERSION 01 SISALMACEN *@
+    @*<link href="<%=ResolveUrl(" ~/Private/global/src/css/customGlobal.css") %>" rel="stylesheet" />*@
+    <script src="~/Recursos/Nuevo/jquery.validationEngine-en.js"></script>
+    <script src="~/Recursos/Nuevo/jquery.validationEngine.js"></script>
+    <link href="~/Recursos/Nuevo/validationEngine.jquery.css" rel="stylesheet" />
+    <link href="~/Recursos/Nuevo/customGlobal.css" rel="stylesheet" />
+
     <!-- ================== BEGIN BASE CSS STYLE ================== -->
     <link href="../../../../fonts.googleapis.com/cssff98.css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
     <link href="~/Recursos/Bootstrapi/assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css" rel="stylesheet" type="text/css" />
@@ -60,41 +68,40 @@
                 <!-- begin mobile sidebar expand / collapse button -->
                 <div class="navbar-header">
                     <a href="@Url.Action("Principal","Intranet")" class="navbar-brand"><span class="navbar-logo"></span> Ketal Moda</a>
+ 
+
+
                     <button type="button" class="navbar-toggle" data-click="sidebar-toggled">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
                 </div>
-                <!-- end mobile sidebar expand / collapse button -->
-                <!-- begin header navigation right -->
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <form class="navbar-form full-width">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Enter keyword" />
-                                <button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
-                            </div>
-                        </form>
-                    </li>
-                    <li class="dropdown navbar-user">
-                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
-                            <img src="~/Recursos/Imagenes/Usuarios/@u.fotografia" alt="" />
-                            <span class="hidden-xs">@u.Nombre @u.ApellidoPaterno</span> <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu animated fadeInLeft">
-                            <li class="arrow"></li>
-                            <li><a href="@Url.Action("EditarUsuario", "Intranet", new { idUsuario = u.idUsuario}, null)">Editar Perfil</a></li>
-                            <li class="divider"></li>
-                            <li><a href="@Url.Action("CerrarSession","Intranet",null,null)" class="fa fa-sign-out"> Salir</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <!-- end header navigation right -->
-            </div>
+                    <!-- end mobile sidebar expand / collapse button -->
+                    <!-- begin header navigation right -->
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="dropdown navbar-user">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="~/Recursos/Imagenes/Usuarios/@u.fotografia" alt="" />
+                                <span class="hidden-xs">@u.Nombre @u.ApellidoPaterno</span> <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInLeft">
+                                <li class="arrow"></li>
+                                <li><a href="@Url.Action("EditarUsuario", "Intranet", new { idUsuario = u.idUsuario}, null)">Editar Perfil</a></li>
+                                <li class="divider"></li>
+                                <li><a href="@Url.Action("CerrarSession","Intranet",null,null)" class="fa fa-sign-out"> Salir</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- end header navigation right -->
+                </div>
             <!-- end container-fluid -->
         </div>
         <!-- end #header -->
+
+
+
         <!-- begin #sidebar -->
         <div id="sidebar" class="sidebar">
             <!-- begin sidebar scrollbar -->
@@ -172,9 +179,80 @@
         </div>
         <div class="sidebar-bg"></div>
         <!-- end #sidebar -->
+
+
+
         <!-- begin #content -->
         <div id="content" class="content">
+            
+
             @RenderBody()
+            @*<div class="col-lg-12">
+                <section class="panel">
+                    <div>
+                        <div class="panel-body" id="frmHome">
+                            <div class=" col-md-12 form-horizontal">
+                                <div class="col-md-5 row form-group" style="padding: 20px">
+                                    <div class="row form-group">
+                                        <asp:ImageButton id="imagebutton1" runat="server" Height="64px" ImageAlign="left" src="~/Recursos/iconos/cityscape.png" OnClick="Empresa_Click" />
+                                        <label style="line-height:6; margin-left:15px">Categoria</label>
+                                        <img src="~/Recursos/iconos/cityscape.png" />
+                                    </div>
+                                    <div class="row form-group">
+                                        <asp:ImageButton id="imagebutton2" runat="server" Height="64px" ImageAlign="left" ImageUrl="~/Recursos/iconos/businessman.png" OnClick="Trabajador_Click" />
+                                        <label style="line-height:6; margin-left:15px">Color</label>
+                                    </div>
+                                    <div class="row form-group">
+                                        <asp:ImageButton id="imagebutton3" runat="server" Height="64px" ImageAlign="left" ImageUrl="~/Recursos/iconos/stopwatch.png" OnClick="Horarios_Click" />
+                                        <label style="line-height:6; margin-left:15px">Diseño</label>
+                                    </div>
+                                    <div class="row form-group">
+                                        <asp:ImageButton id="imagebutton13" runat="server" Height="64px" ImageAlign="left" ImageUrl="~/Recursos/iconos/cloud-computing.png" OnClick="Memoramdums_Click" />
+                                        <label style="line-height:6; margin-left:15px">Talla</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 row form-group" style="padding: 20px">
+                                    <div class="row form-group">
+                                        <asp:ImageButton id="imagebutton4" runat="server" Height="64px" ImageAlign="left" ImageUrl="~/Recursos/iconos/checklist.png" OnClick="Asistencia_Click" />
+                                        <label style="line-height:6; margin-left:15px">Producto</label>
+                                    </div>
+                                    <div class="row form-group">
+                                        <asp:ImageButton id="imagebutton5" runat="server" Height="64px" ImageAlign="left" ImageUrl="~/Recursos/iconos/calculator.png" />
+                                        <label style="line-height:6; margin-left:15px">Distribuidor</label>
+                                    </div>
+                                    <div class="row form-group">
+                                        <asp:ImageButton id="imagebutton6" runat="server" Height="64px" ImageAlign="left" ImageUrl="~/Recursos/iconos/contract.png" />
+                                        <label style="line-height:6; margin-left:15px">Guia de Recepcion</label>
+                                    </div>
+                                    <div class="row form-group">
+                                        <asp:ImageButton id="imagebutton14" runat="server" Height="64px" ImageAlign="left" ImageUrl="~/Recursos/iconos/cash.png" />
+                                        <label style="line-height:6; margin-left:15px">Guía de salida</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 row form-group" style="padding: 20px">
+                                    <div class="row form-group">
+                                        <asp:ImageButton id="imagebutton7" runat="server" Height="64px" ImageAlign="left" ImageUrl="~/Recursos/iconos/bar-chart.png" />
+                                        <label style="line-height:6; margin-left:15px">Reporte minimo de Stock</label>
+                                    </div>
+                                    <div class="row form-group">
+                                        <asp:ImageButton id="imagebutton8" runat="server" Height="64px" ImageAlign="left" ImageUrl="~/Recursos/iconos/archive.png" />
+                                        <label style="line-height:6; margin-left:15px">Repote guia de entrada</label>
+                                    </div>
+                                    <div class="row form-group">
+                                        <asp:ImageButton id="imagebutton9" runat="server" Height="64px" ImageAlign="left" ImageUrl="~/Recursos/iconos/deal.png" />
+                                        <label style="line-height:6; margin-left:15px">Reporte Guia de salida</label>
+                                    </div>
+                                    <div class="row form-group">
+                                        <asp:ImageButton id="imagebutton15" runat="server" Height="64px" ImageAlign="left" ImageUrl="~/Recursos/iconos/calendar.png" />
+                                        <label style="line-height:6; margin-left:15px">Envio Correo</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>*@
         </div>
         <!-- end #content -->
         <!-- begin #footer -->

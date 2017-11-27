@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -209,6 +210,74 @@
     <Content Include="Recursos\Bootstrapi\assets\plugins\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Recursos\Bootstrapi\assets\plugins\bootstrap\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Recursos\Bootstrapi\assets\plugins\bootstrap\fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="Recursos\iconos\abacus.png" />
+    <Content Include="Recursos\iconos\archive.png" />
+    <Content Include="Recursos\iconos\atm.png" />
+    <Content Include="Recursos\iconos\bar-chart.png" />
+    <Content Include="Recursos\iconos\barcode.png" />
+    <Content Include="Recursos\iconos\bitcoin-1.png" />
+    <Content Include="Recursos\iconos\bitcoin.png" />
+    <Content Include="Recursos\iconos\buildings.png" />
+    <Content Include="Recursos\iconos\businessman.png" />
+    <Content Include="Recursos\iconos\buy.png" />
+    <Content Include="Recursos\iconos\calculator.png" />
+    <Content Include="Recursos\iconos\calendar.png" />
+    <Content Include="Recursos\iconos\cash-1.png" />
+    <Content Include="Recursos\iconos\cash-machine-1.png" />
+    <Content Include="Recursos\iconos\cash-machine.png" />
+    <Content Include="Recursos\iconos\cash.png" />
+    <Content Include="Recursos\iconos\check.png" />
+    <Content Include="Recursos\iconos\checklist.png" />
+    <Content Include="Recursos\iconos\cityscape.png" />
+    <Content Include="Recursos\iconos\cloud-computing.png" />
+    <Content Include="Recursos\iconos\contract.png" />
+    <Content Include="Recursos\iconos\credit-card.png" />
+    <Content Include="Recursos\iconos\deal.png" />
+    <Content Include="Recursos\iconos\dollar-symbol-1.png" />
+    <Content Include="Recursos\iconos\dollar-symbol-2.png" />
+    <Content Include="Recursos\iconos\dollar-symbol.png" />
+    <Content Include="Recursos\iconos\euro-1.png" />
+    <Content Include="Recursos\iconos\euro.png" />
+    <Content Include="Recursos\iconos\fourth.png" />
+    <Content Include="Recursos\iconos\franc-1.png" />
+    <Content Include="Recursos\iconos\franc.png" />
+    <Content Include="Recursos\iconos\free.png" />
+    <Content Include="Recursos\iconos\gold-1.png" />
+    <Content Include="Recursos\iconos\gold-ingots.png" />
+    <Content Include="Recursos\iconos\gold-medal.png" />
+    <Content Include="Recursos\iconos\gold.png" />
+    <Content Include="Recursos\iconos\groceries.png" />
+    <Content Include="Recursos\iconos\line-chart.png" />
+    <Content Include="Recursos\iconos\loss.png" />
+    <Content Include="Recursos\iconos\money-bag.png" />
+    <Content Include="Recursos\iconos\new.png" />
+    <Content Include="Recursos\iconos\open.png" />
+    <Content Include="Recursos\iconos\package.png" />
+    <Content Include="Recursos\iconos\pie-chart.png" />
+    <Content Include="Recursos\iconos\point-of-service.png" />
+    <Content Include="Recursos\iconos\pound-sterling-1.png" />
+    <Content Include="Recursos\iconos\pound-sterling.png" />
+    <Content Include="Recursos\iconos\price-tag.png" />
+    <Content Include="Recursos\iconos\profits.png" />
+    <Content Include="Recursos\iconos\qr-code.png" />
+    <Content Include="Recursos\iconos\rupee-1.png" />
+    <Content Include="Recursos\iconos\rupee.png" />
+    <Content Include="Recursos\iconos\sales.png" />
+    <Content Include="Recursos\iconos\second.png" />
+    <Content Include="Recursos\iconos\stopwatch.png" />
+    <Content Include="Recursos\iconos\tag.png" />
+    <Content Include="Recursos\iconos\telemarketer.png" />
+    <Content Include="Recursos\iconos\third.png" />
+    <Content Include="Recursos\iconos\trolley.png" />
+    <Content Include="Recursos\iconos\wallet.png" />
+    <Content Include="Recursos\iconos\yen-1.png" />
+    <Content Include="Recursos\iconos\yen-2.png" />
+    <Content Include="Recursos\iconos\yen.png" />
+    <Content Include="Recursos\iconos\yuan.png" />
+    <Content Include="Recursos\Nuevo\customGlobal.css" />
+    <Content Include="Recursos\Nuevo\jquery.validationEngine-en.js" />
+    <Content Include="Recursos\Nuevo\jquery.validationEngine.js" />
+    <Content Include="Recursos\Nuevo\validationEngine.jquery.css" />
     <Content Include="Views\ReporteRecepcion\ReporteGuiaRecepcion.cshtml" />
     <Content Include="Views\ReporteRecepcion\ReporteGuiaParametro.cshtml" />
     <Content Include="Views\ReporteSalida\ReporteGuiaSalida.cshtml" />
