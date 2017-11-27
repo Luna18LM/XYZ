@@ -13,7 +13,7 @@
         <label class="col-md-3 control-label">Precio :</label><input type="text" class="form-control" placeholder="Ingrese Precio" name="txtPrecio" value="@Html.DisplayFor(model => model.Precio)" /><br />
         <label class="col-md-3 control-label">Stock :</label><input type="text" class="form-control" placeholder="Ingrese Stock" name="txtStock" value="@Html.DisplayFor(model => model.Stock)" /><br />
         <label class="col-md-3 control-label">Descripcion :</label><input type="text" class="form-control" placeholder="Ingrese Descripcion" name="txtDescripcion" value="@Html.DisplayFor(model => model.Descripcion)" /><br />
-        <label class="col-md-3 control-label">Imagen :</label><input type="file" name="archivo" class="form-control" /><br />
+        <label class="col-md-3 control-label">Imagen :</label><input type="file" name="archivo" class="form-control" value="@Html.DisplayFor(model => model.Imagen)"/><br />
         <label class="col-md-3 control-label">Categoria :</label>@Html.DropDownListFor(model => model.categoria.idCategoria, (SelectList)ViewBag.listaCategoria, "Seleccionar", new { @class = "form-control" })<br />
         <label class="col-md-3 control-label">Talla :</label>@Html.DropDownListFor(model => model.talla.idTalla, (SelectList)ViewBag.listaTalla, "Seleccionar", new { @class = "form-control" })<br />
         <label class="col-md-3 control-label">Diseño :</label>@Html.DropDownListFor(model => model.diseño.idDiseño, (SelectList)ViewBag.listaDiseño, "Seleccionar", new { @class = "form-control" })<br />

@@ -15,6 +15,7 @@ namespace Capaweb.Controllers
     public class ProductoController : Controller
     {
         //
+
         // GET: /Producto/
 
         [HttpGet]
@@ -125,6 +126,7 @@ namespace Capaweb.Controllers
                 ViewBag.listaColor = lstcolor;
 
                 Producto p = logProducto.Instancia.BuscarProducto(Convert.ToInt16(id));
+
                 return View(p);
             }
             catch (Exception e) { throw e; }
@@ -165,6 +167,8 @@ namespace Capaweb.Controllers
                     co.idColor = idColor;
                     p.color = co;
 
+    
+
                     Boolean edito = logProducto.Instancia.EditarProducto(p);
                     if (edito != false)
                     {
@@ -173,7 +177,10 @@ namespace Capaweb.Controllers
                             var namearchivo = Path.GetFileName(archivo.FileName);
                             var ruta = Path.Combine(Server.MapPath("~/Recursos/Imagenes/Productos"), namearchivo);
                             archivo.SaveAs(ruta);
-                        } 
+                        }
+
+
+
                         return RedirectToAction("ListarProducto");
                     }
                     else { return View(); }

@@ -152,10 +152,11 @@ namespace Capadatos
         {
             SqlCommand cmd = null;
             Boolean edito = false;
+            if (p.Imagen == null) { p.Imagen = ""; }
             try
             {
                 SqlConnection cn = Conexion.Instancia.conectar();
-                cmd = new SqlCommand("EditarProducto", cn);
+                cmd = new SqlCommand("EditarProducto2", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@Nombre", p.Nombre);
                 cmd.Parameters.AddWithValue("@Serie", p.Serie);
