@@ -4,3 +4,92 @@
 }
 
 <h2>Principal</h2>
+
+@{<div class="col-lg-12">
+        <section class="panel">
+            <div>
+                <style>
+                    .principal-box {
+                        margin-top: 40px;
+                         display: flex;
+                         align-items: center;
+                    }
+                    .principal-box > label {
+                        margin-left: 20px;
+                        margin-top: 20px;
+                        font-size: 120%;
+                    }
+                    .principal-box > img {
+                        height: 70px;
+                        width: 70px;
+                    }
+                    #frmHome a {
+                        text-decoration: none;
+                    }
+
+                    #frmHome a > label {
+                        cursor: pointer;
+                    }
+                </style>
+                <div class="panel-body" id="frmHome">
+                    <div class="col-md-12 form-horizontal">
+                        <div class="col-md-4 row form-group" style="padding: 20px">
+                            <a class="row form-group principal-box" href="@Url.Action("ListarCategoria", "Categoria")">
+                                <img src="~/Recursos/iconos/cityscape.png">
+                                <label>Categoria</label>
+                            </a>
+                            <a class="row form-group principal-box" href="@Url.Action("ListarColor", "Color")">
+                                <img src="~/Recursos/iconos/businessman.png">
+                                <label>Color</label>
+                            </a>
+                            <a class="row form-group principal-box" href="@Url.Action("ListarDiseño", "Diseño")">
+                                <img src="~/Recursos/iconos/stopwatch.png">
+                                <label>Diseño</label>
+                            </a>
+                            <a class="row form-group principal-box" href="@Url.Action("ListarTalla", "Talla")">
+                                <img src="~/Recursos/iconos/cloud-computing.png">
+                                <label>Talla</label>
+                            </a>
+                        </div>
+                        <div class="col-md-4 row form-group" style="padding: 20px">
+                            <a class="row form-group principal-box" href="@Url.Action("ListarProducto", "Producto")">
+                                <img src="~/Recursos/iconos/checklist.png">
+                                <label>Producto</label>
+                            </a>
+                            <a class="row form-group principal-box" href="@Url.Action("ListarDistribuidor", "Distribuidor")">
+                                <img src="~/Recursos/iconos/calculator.png">
+                                <label>Distribuidor</label>
+                            </a>
+                            <a class="row form-group principal-box" href="@Url.Action("Guiarecepcion", "Guiarecepcion")">
+                                <img src="~/Recursos/iconos/contract.png">
+                                <label>Guía de Recepción</label>
+                            </a>
+                            <a class="row form-group principal-box" href="@Url.Action("GuiaSalida", "GuiaSalida")">
+                                <img src="~/Recursos/iconos/cash.png">
+                                <label>Guía de Salida</label>
+                            </a>
+                        </div>
+                        <div class="col-md-4 row form-group" style="padding: 20px">
+                            <a class="row form-group principal-box" href="@Url.Action("ReporteProductoMin", "Producto")">
+                                <img src="~/Recursos/iconos/bar-chart.png">
+                                <label>Reporte Mínimo de Stock</label>
+                            </a>
+                            <a class="row form-group principal-box" href="@Url.Action("ReporteGuiaRecepcion", "ReporteRecepcion")">
+                                <img src="~/Recursos/iconos/archive.png">
+                                <label>Reporte Guía de Entrada</label>
+                            </a>
+                            <a class="row form-group principal-box" href="@Url.Action("ReporteGuiaSalida", "ReporteSalida")">
+                                <img src="~/Recursos/iconos/deal.png">
+                                <label>Reporte Guía de Salida</label>
+                            </a>
+                            <a class="row form-group principal-box" href="@Url.Action("EnviarCorreo", "Correo")">
+                                <img src="~/Recursos/iconos/calendar.png">
+                                <label>Envio Correo</label>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>}
